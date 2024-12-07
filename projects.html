@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BI Analyst Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Projects</h1>
+            <div class="cards">
+                <div class="card">
+                    <h3>Sales Dashboard (Tableau)</h3>
+                    <iframe 
+                        src="https://public.tableau.com/views/YourTableauDashboard"
+                        width="100%" 
+                        height="400" 
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="card">
+                    <h3>Revenue Insights (Power BI)</h3>
+                    <iframe 
+                        src="https://app.powerbi.com/view?r=YourPowerBIDashboard" 
+                        width="100%" 
+                        height="400" 
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="card">
+                    <h3>ML Predictions (Streamlit)</h3>
+                    <a href="https://your-streamlit-app-url" target="_blank">View Dashboard</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Thales Nobrega. 
+           <a href="https://linkedin.com/in/your-profile" target="_blank">
+               <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" width="24">
+           </a>
+           <a href="mailto:youremail@example.com" target="_blank">
+               <img src="assets/images/email-icon.svg" alt="Email" width="24">
+           </a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
