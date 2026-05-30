@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Certifications</title>
+    <meta name="description" content="Certifications and professional learning for Thales Nobrega.">
+    <title>Certifications | Thales Nobrega</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">BI Analyst Portfolio</div>
-        <nav>
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Thales Nobrega home">TN</a>
+        <nav aria-label="Primary navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -17,32 +21,36 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
+        <section class="page-hero section-shell">
+            <p class="eyebrow">Professional development</p>
             <h1>Certifications</h1>
-            <div class="cards">
-                <div class="card">
-                    <img src="assets/images/data-analyst-cert.png" alt="Data Analyst Certification">
-                    <h3>Microsoft Certified: Data Analyst Associate</h3>
-                    <p>Specialised in Power BI and advanced analytics.</p>
-                </div>
-                <div class="card">
-                    <img src="assets/images/tableau-specialist-cert.png" alt="Tableau Specialist Certification">
-                    <h3>Tableau Desktop Specialist</h3>
-                    <p>Certified expertise in Tableau dashboarding.</p>
-                </div>
+            <p class="muted">Credentials and learning areas that support practical business intelligence, dashboard design, and analytics delivery.</p>
+        </section>
+
+        <section class="section-shell">
+            <div class="cards certification-grid">
+                <article class="card certification-card">
+                    <span class="cert-badge">Microsoft</span>
+                    <h2>Microsoft Certified: Data Analyst Associate</h2>
+                    <p>Power BI-focused certification covering data preparation, modelling, visualization, and analytics delivery.</p>
+                </article>
+                <article class="card certification-card">
+                    <span class="cert-badge">Tableau</span>
+                    <h2>Tableau Desktop Specialist</h2>
+                    <p>Dashboarding and visual analytics credential focused on effective Tableau reporting workflows.</p>
+                </article>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; <span id="current-year"></span> Thales Nobrega. 
-           <a href="https://linkedin.com/in/your-profile" target="_blank">
-               <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" width="24">
-           </a>
-           <a href="mailto:youremail@example.com" target="_blank">
-               <img src="assets/images/email-icon.svg" alt="Email" width="24">
-           </a>
-        </p>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Thales Nobrega.</p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:youremail@example.com">Email</a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

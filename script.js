@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const yearSpan = document.getElementById("current-year");
-  const currentYear = new Date().getFullYear();
-  yearSpan.textContent = currentYear;
+
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 });

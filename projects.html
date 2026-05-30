@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Projects</title>
+    <meta name="description" content="Selected BI and analytics projects by Thales Nobrega.">
+    <title>Projects | Thales Nobrega</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">BI Analyst Portfolio</div>
-        <nav>
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Thales Nobrega home">TN</a>
+        <nav aria-label="Primary navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
@@ -17,46 +21,61 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h1>Projects</h1>
-            <div class="cards">
-                <div class="card">
-                    <h3>Sales Dashboard (Tableau)</h3>
-                    <iframe 
-                        src="https://public.tableau.com/views/YourTableauDashboard"
-                        width="100%" 
-                        height="400" 
-                        frameborder="0"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="card">
-                    <h3>Revenue Insights (Power BI)</h3>
-                    <iframe 
-                        src="https://app.powerbi.com/view?r=YourPowerBIDashboard" 
-                        width="100%" 
-                        height="400" 
-                        frameborder="0"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="card">
-                    <h3>ML Predictions (Streamlit)</h3>
-                    <a href="https://your-streamlit-app-url" target="_blank">View Dashboard</a>
-                </div>
+        <section class="page-hero section-shell">
+            <p class="eyebrow">Portfolio</p>
+            <h1>Selected projects</h1>
+            <p class="muted">A concise collection of dashboarding and analytics work focused on clarity, usability, and business outcomes.</p>
+        </section>
+
+        <section class="section-shell">
+            <div class="cards project-grid">
+                <article class="card project-card">
+                    <span class="tag">Tableau</span>
+                    <h2>Sales performance dashboard</h2>
+                    <p>Interactive reporting experience for monitoring sales trends, regional performance, and product-level contribution.</p>
+                    <ul class="project-list">
+                        <li>Built for fast KPI review</li>
+                        <li>Designed for stakeholder exploration</li>
+                        <li>Highlights opportunities and outliers</li>
+                    </ul>
+                    <a class="text-link" href="https://public.tableau.com/views/YourTableauDashboard" target="_blank" rel="noopener">Open Tableau dashboard</a>
+                </article>
+
+                <article class="card project-card">
+                    <span class="tag">Power BI</span>
+                    <h2>Revenue insights dashboard</h2>
+                    <p>Executive-ready view of revenue performance, variance drivers, and priority areas for commercial decision-making.</p>
+                    <ul class="project-list">
+                        <li>Clear revenue and margin summaries</li>
+                        <li>Drill-down friendly report structure</li>
+                        <li>Clean visual hierarchy for leadership</li>
+                    </ul>
+                    <a class="text-link" href="https://app.powerbi.com/view?r=YourPowerBIDashboard" target="_blank" rel="noopener">Open Power BI report</a>
+                </article>
+
+                <article class="card project-card">
+                    <span class="tag">Streamlit</span>
+                    <h2>Prediction app prototype</h2>
+                    <p>Lightweight analytics app that presents model outputs in a simple interface for scenario review and decision support.</p>
+                    <ul class="project-list">
+                        <li>Simple inputs and readable outputs</li>
+                        <li>Designed for non-technical users</li>
+                        <li>Supports rapid insight sharing</li>
+                    </ul>
+                    <a class="text-link" href="https://your-streamlit-app-url" target="_blank" rel="noopener">View Streamlit app</a>
+                </article>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; <span id="current-year"></span> Thales Nobrega. 
-           <a href="https://linkedin.com/in/your-profile" target="_blank">
-               <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" width="24">
-           </a>
-           <a href="mailto:youremail@example.com" target="_blank">
-               <img src="assets/images/email-icon.svg" alt="Email" width="24">
-           </a>
-        </p>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Thales Nobrega.</p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:youremail@example.com">Email</a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

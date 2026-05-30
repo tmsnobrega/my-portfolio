@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
+    <meta name="description" content="Portfolio for Thales Nobrega, a BI Analyst focused on analytics, dashboard design, and data storytelling.">
+    <title>Thales Nobrega | BI Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'YOUR_GA_TRACKING_ID');
-    </script>
 </head>
 <body>
-    <header>
-        <div class="logo">BI Analyst Portfolio</div>
-        <nav>
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Thales Nobrega home">TN</a>
+        <nav aria-label="Primary navigation">
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -24,34 +21,78 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I’m a BI Analyst specialising in data analytics and dashboard design.</p>
+        <section class="hero section-shell">
+            <div class="hero-copy">
+                <p class="eyebrow">Business Intelligence • Analytics • Data Storytelling</p>
+                <h1>Turning business data into clear, decision-ready insights.</h1>
+                <p class="hero-text">I’m Thales Nobrega, a BI Analyst who builds clean dashboards, improves reporting workflows, and translates complex data into practical recommendations for stakeholders.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="projects.html">View projects</a>
+                    <a class="button secondary" href="mailto:youremail@example.com">Contact me</a>
+                </div>
+            </div>
+            <aside class="hero-card" aria-label="Profile summary">
+                <span class="status-pill">Available for BI opportunities</span>
+                <h2>Core focus</h2>
+                <ul class="check-list">
+                    <li>Power BI and Tableau dashboards</li>
+                    <li>SQL-based analysis and reporting</li>
+                    <li>Executive-ready KPI storytelling</li>
+                </ul>
+            </aside>
         </section>
-        <section class="highlights">
-            <h2>Highlights</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Project 1</h3>
-                    <p>Advanced dashboarding using Power BI.</p>
-                </div>
-                <div class="card">
-                    <h3>Certification</h3>
-                    <p>Certified Data Analyst (DA-100).</p>
-                </div>
+
+        <section class="section-shell">
+            <div class="section-heading">
+                <p class="eyebrow">What I do</p>
+                <h2>Simple, useful analytics for better decisions.</h2>
+            </div>
+            <div class="cards three-column">
+                <article class="card">
+                    <span class="card-icon">📊</span>
+                    <h3>BI dashboards</h3>
+                    <p>Design interactive reports that make performance trends, risks, and opportunities easy to understand.</p>
+                </article>
+                <article class="card">
+                    <span class="card-icon">🔎</span>
+                    <h3>Data analysis</h3>
+                    <p>Explore datasets, validate assumptions, and deliver insights that connect analytical detail to business context.</p>
+                </article>
+                <article class="card">
+                    <span class="card-icon">⚙️</span>
+                    <h3>Reporting workflows</h3>
+                    <p>Streamline recurring reporting with repeatable processes, cleaner data models, and stakeholder-friendly outputs.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-shell split-section">
+            <div>
+                <p class="eyebrow">Skills</p>
+                <h2>Tools and capabilities</h2>
+                <p class="muted">A practical BI toolkit for building reliable dashboards and communicating insights clearly.</p>
+            </div>
+            <div class="skill-cloud" aria-label="Skills list">
+                <span>Power BI</span>
+                <span>Tableau</span>
+                <span>SQL</span>
+                <span>Excel</span>
+                <span>Data modelling</span>
+                <span>KPI reporting</span>
+                <span>Dashboard design</span>
+                <span>Streamlit</span>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; <span id="current-year"></span> Thales Nobrega. 
-           <a href="https://linkedin.com/in/your-profile" target="_blank">
-               <img src="assets/images/linkedin-icon.svg" alt="LinkedIn" width="24">
-           </a>
-           <a href="mailto:youremail@example.com" target="_blank">
-               <img src="assets/images/email-icon.svg" alt="Email" width="24">
-           </a>
-        </p>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Thales Nobrega.</p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:youremail@example.com">Email</a>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
